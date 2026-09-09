@@ -1,0 +1,12 @@
+# Original dataset
+data/Online Retail.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/

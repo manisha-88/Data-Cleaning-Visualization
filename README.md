@@ -1,4 +1,4 @@
-# Online Retail Data Cleaning & Visualization
+# Online Retail Data Cleaning, Visualization & Predictive Modeling
 
 ## Project Overview
 
@@ -127,3 +127,82 @@ Data-Cleaning-Visualization/
 │   └── correlation_heatmap.png
 │
 └── README.md
+# Week 2: Predictive Modeling Using Machine Learning
+
+## Objective
+
+The second phase of this project extends the cleaned Online Retail dataset by applying supervised machine learning techniques.
+
+The objective is to classify transactions as normal-value or high-value transactions.
+
+## Machine Learning Approach
+
+A binary target variable named `HighValue` was created using the median transaction sales value.
+
+- `1` = High-value transaction
+- `0` = Normal-value transaction
+
+The dataset was divided into:
+
+- 80% training data
+- 20% testing data
+
+Stratified sampling was used to maintain the class distribution.
+
+## Models Used
+
+### Decision Tree Classifier
+
+A Decision Tree classifier was trained with a maximum depth of 10 to control model complexity and reduce overfitting.
+
+### Random Forest Classifier
+
+A Random Forest classifier using 100 decision trees was trained for comparison.
+
+## Model Performance
+
+| Model | Accuracy | AUC |
+|---|---:|---:|
+| Decision Tree | 94% | 0.99 |
+| Random Forest | 92% | 0.98 |
+
+The Decision Tree performed slightly better than the Random Forest in this experiment.
+
+## Evaluation Methods
+
+The models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- ROC Curve
+- AUC
+
+## Machine Learning Visualizations
+
+The following visualizations were created:
+
+- Decision Tree Confusion Matrix
+- Random Forest Confusion Matrix
+- Model Performance Comparison
+- ROC Curve Comparison
+- Feature Importance
+
+## Feature Importance
+
+The most important features for the Decision Tree were:
+
+1. Quantity
+2. UnitPrice
+3. Country
+4. Month
+
+Quantity and UnitPrice had substantially higher importance than the categorical features.
+
+## Limitation
+
+The `HighValue` target was derived from `TotalSales`, while `TotalSales` is calculated from Quantity and UnitPrice.
+
+Therefore, Quantity and UnitPrice naturally have strong predictive power. The machine learning component is intended to demonstrate supervised learning, preprocessing, model training, and evaluation rather than serve as a production-ready future prediction system.

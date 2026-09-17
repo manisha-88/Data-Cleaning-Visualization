@@ -206,3 +206,52 @@ Quantity and UnitPrice had substantially higher importance than the categorical 
 The `HighValue` target was derived from `TotalSales`, while `TotalSales` is calculated from Quantity and UnitPrice.
 
 Therefore, Quantity and UnitPrice naturally have strong predictive power. The machine learning component is intended to demonstrate supervised learning, preprocessing, model training, and evaluation rather than serve as a production-ready future prediction system.
+## Week 3 – Exploratory Data Analysis
+
+### Objective
+
+The objective of this week was to analyze the cleaned Online Retail dataset and identify meaningful patterns, relationships, and trends.
+
+### EDA Performed
+
+- Statistical summary
+- Sales distribution analysis
+- Quantity distribution analysis
+- Correlation analysis
+- Country-wise revenue analysis
+- Product-wise revenue analysis
+- Customer revenue analysis
+- Monthly transaction analysis
+- Identification of key influencing factors
+
+### Key Insights
+
+- Most transactions have relatively low sales values.
+- Sales distribution is right-skewed.
+- Quantity has a moderate positive relationship with TotalSales.
+- UnitPrice has a weaker positive relationship with TotalSales.
+- The United Kingdom generates the highest revenue.
+- REGENCY CAKESTAND 3 TIER is the highest-revenue product.
+- Customer 14911 has the highest revenue among the top customers analyzed.
+- November has the highest transaction volume in the analyzed period.
+
+### EDA Visualizations
+
+The project includes visualizations for:
+
+1. Sales distribution
+2. Quantity distribution
+3. Correlation heatmap
+4. Country-wise revenue
+5. Product-wise revenue
+6. Top customers by revenue
+7. Monthly transaction volume
+
+### Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
